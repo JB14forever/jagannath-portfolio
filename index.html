@@ -102,11 +102,45 @@
           </svg>
           Based in Dublin, Ireland (Open to roles across Ireland & Europe)
         </div>
+
+        <div class="hero-proof" aria-label="Professional highlights">
+          <div class="proof-card">
+            <strong>3+</strong>
+            <span>Years analyst experience</span>
+          </div>
+          <div class="proof-card">
+            <strong>4</strong>
+            <span>Portfolio data projects</span>
+          </div>
+          <div class="proof-card">
+            <strong>MSc</strong>
+            <span>Data Analytics, TU Dublin</span>
+          </div>
+        </div>
         
         <div class="btn-group">
           <a href="#projects" class="btn btn-primary" id="hero-projects-btn">View Projects</a>
           <a href="assets/documents/Jagannath_Barik_CV.pdf" class="btn btn-secondary" download id="hero-cv-btn">Download CV</a>
           <a href="#contact" class="btn btn-outline" id="hero-contact-btn">Contact Me</a>
+        </div>
+
+        <div class="hero-socials" aria-label="Social profiles">
+          <a href="https://github.com/JB14forever" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/jagannath-barik/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+            </svg>
+          </a>
+          <a href="mailto:jagannathbarik1408@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
         </div>
       </div>
       
@@ -184,6 +218,39 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Focus Areas Section -->
+  <section id="focus">
+    <div class="container">
+      <div class="section-header">
+        <h2>How I Work With Data</h2>
+        <p>Clear, practical analytics support from raw datasets to business-ready decisions.</p>
+      </div>
+
+      <div class="focus-grid">
+        <article class="focus-card">
+          <span>01</span>
+          <h3>BI Dashboards</h3>
+          <p>Power BI and Excel dashboards that turn KPIs, filters, and trends into clean decision views.</p>
+        </article>
+        <article class="focus-card">
+          <span>02</span>
+          <h3>Predictive Analytics</h3>
+          <p>Machine learning workflows for churn, classification, forecasting, model comparison, and evaluation.</p>
+        </article>
+        <article class="focus-card">
+          <span>03</span>
+          <h3>Data Quality</h3>
+          <p>Cleaning, validation, transformation, and survey-data checks built from analyst delivery experience.</p>
+        </article>
+        <article class="focus-card">
+          <span>04</span>
+          <h3>Insight Reporting</h3>
+          <p>Readable summaries, stakeholder-ready narratives, and analytical findings with business context.</p>
+        </article>
       </div>
     </div>
   </section>
@@ -328,10 +395,17 @@
         <h2>Featured Projects</h2>
         <p>Real-world datasets and data products demonstrating analysis, machine learning, and BI dashboards.</p>
       </div>
+
+      <div class="project-filters" aria-label="Project categories">
+        <button class="project-filter active" type="button" data-filter="all">All</button>
+        <button class="project-filter" type="button" data-filter="bi">BI Dashboards</button>
+        <button class="project-filter" type="button" data-filter="ml">Machine Learning</button>
+        <button class="project-filter" type="button" data-filter="analytics">Analytics</button>
+      </div>
       
       <div class="projects-grid">
         <!-- Project 1 -->
-        <div class="project-card">
+        <div class="project-card" data-category="analytics ml">
           <div class="project-image">
             <img src="assets/images/project-analytics-pipeline.png" alt="Automated Data Analytics Pipeline using AI Agents">
           </div>
@@ -370,7 +444,7 @@
         </div>
         
         <!-- Project 2 -->
-        <div class="project-card">
+        <div class="project-card" data-category="ml">
           <div class="project-image">
             <img src="assets/images/project-churn-prediction.png" alt="Customer Churn Prediction using Machine Learning">
           </div>
@@ -410,7 +484,7 @@
         </div>
         
         <!-- Project 3 -->
-        <div class="project-card">
+        <div class="project-card" data-category="bi">
           <div class="project-image">
             <img src="assets/images/project-powerbi-dashboard.png" alt="Sales Performance Dashboard">
           </div>
@@ -444,7 +518,7 @@
         </div>
         
         <!-- Project 4 -->
-        <div class="project-card">
+        <div class="project-card" data-category="analytics">
           <div class="project-image">
             <img src="assets/images/project-policy-analysis.png" alt="Impact of Mobility Restrictions on Air Quality">
           </div>

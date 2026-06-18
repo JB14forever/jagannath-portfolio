@@ -1401,3 +1401,312 @@ footer {
     gap: 1rem;
   }
 }
+
+/* ==========================================
+   Portfolio Refresh Inspired by Reference Site
+   ========================================== */
+:root {
+  --bg-color: #FCFCFA;
+  --bg-section: #F4F7F4;
+  --text-primary: #202124;
+  --text-secondary: #61646B;
+  --accent-color: #256E5B;
+  --accent-hover: #174D40;
+  --accent-light: #E7F3EE;
+  --dark-navy: #151817;
+  --border-color: #DDE5DF;
+  --card-bg: rgba(255, 255, 255, 0.86);
+  --nav-bg: rgba(252, 252, 250, 0.88);
+  --shadow-hover: 0 20px 34px -10px rgba(37, 110, 91, 0.18), 0 10px 16px -10px rgba(32, 33, 36, 0.16);
+}
+
+[data-theme="dark"] {
+  --bg-color: #171918;
+  --bg-section: #202421;
+  --text-primary: #F2F5F0;
+  --text-secondary: #BCC5BE;
+  --accent-color: #8FCBB9;
+  --accent-hover: #B7E4D7;
+  --accent-light: #26362F;
+  --dark-navy: #111312;
+  --border-color: #3A453F;
+  --card-bg: rgba(31, 35, 32, 0.9);
+  --nav-bg: rgba(23, 25, 24, 0.88);
+}
+
+body {
+  background:
+    radial-gradient(circle, rgba(37, 110, 91, 0.12) 1px, transparent 1.5px),
+    var(--bg-color);
+  background-size: 18px 18px;
+}
+
+.section-bg {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0)),
+    var(--bg-section);
+}
+
+.section-header h2 {
+  letter-spacing: 0;
+}
+
+#home {
+  padding: 9rem 0 5rem;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-grid {
+  grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-subtitle {
+  letter-spacing: 0.08em;
+}
+
+.hero-title {
+  max-width: 760px;
+  letter-spacing: 0;
+}
+
+.hero-tagline {
+  color: var(--text-primary);
+}
+
+.hero-proof {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 0 2rem;
+}
+
+.proof-card {
+  min-height: 96px;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.proof-card strong {
+  display: block;
+  color: var(--accent-color);
+  font-size: 1.55rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.proof-card span {
+  color: var(--text-secondary);
+  font-size: 0.84rem;
+  line-height: 1.35;
+}
+
+.hero-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.hero-socials a {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  transition: transform var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.hero-socials a:hover {
+  color: #FFFFFF;
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.hero-socials svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.hero-image-wrapper {
+  width: 340px;
+  height: 340px;
+  border: 0;
+  border-radius: 58% 42% 36% 64% / 56% 40% 60% 44%;
+  box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.55), var(--shadow-lg);
+  animation: profile-shape 8s ease-in-out infinite;
+}
+
+.hero-image-bg {
+  width: 340px;
+  height: 340px;
+  top: 22px;
+  left: 22px;
+  border-radius: 42% 58% 58% 42% / 44% 62% 38% 56%;
+  border-style: solid;
+  opacity: 0.7;
+}
+
+@keyframes profile-shape {
+  0%, 100% {
+    border-radius: 58% 42% 36% 64% / 56% 40% 60% 44%;
+  }
+  50% {
+    border-radius: 38% 62% 61% 39% / 48% 58% 42% 52%;
+  }
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.focus-card {
+  min-height: 230px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.focus-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow-hover);
+}
+
+.focus-card span {
+  display: inline-block;
+  color: var(--accent-color);
+  font-weight: 800;
+  margin-bottom: 2.25rem;
+}
+
+.focus-card h3 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.focus-card p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: -1.5rem 0 3rem;
+}
+
+.project-filter {
+  color: var(--text-primary);
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.55rem 0.95rem;
+  font-weight: 700;
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.project-filter:hover,
+.project-filter.active {
+  color: #FFFFFF;
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+.project-card.is-hidden {
+  display: none;
+}
+
+.project-card,
+.skills-card,
+.highlight-card,
+.education-card,
+.timeline-content,
+.resume-box,
+.contact-card {
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.project-tag,
+.skill-tag {
+  border-radius: 8px;
+}
+
+.contact-text h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .focus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    padding: 7rem 0 4.5rem;
+    min-height: auto;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-proof {
+    max-width: 560px;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-proof,
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-card {
+    min-height: auto;
+  }
+
+  .hero-image-wrapper,
+  .hero-image-bg {
+    width: 260px;
+    height: 260px;
+  }
+
+  .project-filter {
+    flex: 1 1 calc(50% - 0.75rem);
+  }
+}

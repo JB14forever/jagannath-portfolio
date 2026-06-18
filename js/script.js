@@ -69,10 +69,29 @@ document.addEventListener('DOMContentLoaded', () => {
   
   window.addEventListener('scroll', scrollActive);
 
+  // --- Project Category Filtering ---
+  const projectFilters = document.querySelectorAll('.project-filter');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  projectFilters.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter;
+
+      projectFilters.forEach(item => item.classList.remove('active'));
+      button.classList.add('active');
+
+      projectCards.forEach(card => {
+        const categories = card.dataset.category?.split(' ') || [];
+        const shouldShow = filter === 'all' || categories.includes(filter);
+        card.classList.toggle('is-hidden', !shouldShow);
+      });
+    });
+  });
+
   // --- Scroll Reveal Animations ---
   // Add an entry animation to elements as they enter the screen
   const revealElements = document.querySelectorAll(
-    '.project-card, .skills-card, .timeline-item, .education-card, .highlight-card, .resume-box, .contact-card'
+    '.project-card, .skills-card, .timeline-item, .education-card, .highlight-card, .focus-card, .resume-box, .contact-card'
   );
   
   // Set up initial style for animation
