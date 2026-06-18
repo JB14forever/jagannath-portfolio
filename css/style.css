@@ -247,9 +247,9 @@ header {
 }
 
 .logo {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: 800;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
   color: var(--text-primary);
   display: flex;
   align-items: center;
@@ -949,35 +949,6 @@ header {
 }
 
 /* ==========================================
-   Resume Section
-   ========================================== */
-.resume-box {
-  background-color: var(--bg-section);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 3rem;
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  box-shadow: var(--shadow-sm);
-}
-
-.resume-box h3 {
-  font-size: 1.75rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-}
-
-.resume-box p {
-  color: var(--text-secondary);
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ==========================================
    Contact Section
    ========================================== */
 .contact-grid {
@@ -1387,14 +1358,6 @@ footer {
     width: 100%;
   }
   
-  .resume-box {
-    padding: 2rem 1.5rem;
-  }
-  
-  .resume-box h3 {
-    font-size: 1.4rem;
-  }
-  
   .footer-nav {
     flex-direction: column;
     align-items: center;
@@ -1546,6 +1509,10 @@ body {
   fill: currentColor;
 }
 
+.contact-info-icon svg {
+  fill: currentColor;
+}
+
 .hero-image-wrapper {
   width: 340px;
   height: 340px;
@@ -1648,7 +1615,6 @@ body {
 .highlight-card,
 .education-card,
 .timeline-content,
-.resume-box,
 .contact-card {
   border-radius: 8px;
   backdrop-filter: blur(10px);
@@ -1663,6 +1629,89 @@ body {
   font-size: 1.75rem;
   font-weight: 800;
   margin-bottom: 1rem;
+}
+
+.skills-grid {
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+}
+
+.skills-card {
+  height: 100%;
+  min-height: 245px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-list {
+  align-content: flex-start;
+}
+
+.projects-grid {
+  gap: 1.5rem;
+}
+
+.project-image {
+  aspect-ratio: 2.25 / 1;
+}
+
+.project-content {
+  padding: 1.25rem;
+}
+
+.project-title {
+  font-size: 1.12rem;
+}
+
+.project-desc {
+  margin-bottom: 1rem;
+}
+
+.project-tags {
+  margin-bottom: 1rem;
+}
+
+.project-highlights {
+  margin-bottom: 1rem;
+}
+
+.project-highlights li {
+  font-size: 0.84rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-highlights li:nth-child(n+4) {
+  display: none;
+}
+
+.education-grid {
+  max-width: 880px;
+  gap: 1.25rem;
+}
+
+.education-card {
+  padding: 1.5rem;
+}
+
+.education-degree {
+  font-size: 1.16rem;
+}
+
+.education-school {
+  font-size: 0.98rem;
+  margin-bottom: 1rem;
+}
+
+.education-highlights {
+  padding-top: 1rem;
+}
+
+.education-highlights ul {
+  gap: 0.35rem;
+}
+
+.education-highlights li {
+  font-size: 0.84rem;
 }
 
 @media (max-width: 1024px) {
