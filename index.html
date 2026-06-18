@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jagannath Barik | Data Analyst Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Data Analyst portfolio of Jagannath Barik, MSc Data Analytics student at TU Dublin with experience in Python, SQL, Power BI, machine learning, dashboards, and business analytics.">
+  <meta name="keywords" content="Data Analyst, BI Analyst, Power BI, SQL, Python, Data Analytics, Dublin, Ireland, Junior Data Scientist, Business Analyst">
+  <meta name="author" content="Jagannath Barik">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jagannath Barik | Data Analyst Portfolio">
+  <meta property="og:description" content="Data Analyst portfolio of Jagannath Barik, MSc Data Analytics student at TU Dublin with experience in Python, SQL, Power BI, machine learning, and BI dashboards.">
+  <meta property="og:image" content="assets/images/project-analytics-pipeline.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Jagannath Barik | Data Analyst Portfolio">
+  <meta property="twitter:description" content="Data Analyst portfolio of Jagannath Barik, MSc Data Analytics student at TU Dublin with experience in Python, SQL, Power BI, machine learning, and BI dashboards.">
+  <meta property="twitter:image" content="assets/images/project-analytics-pipeline.png">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container navbar">
+      <a href="#home" class="logo" id="logo-nav">
+        JB<span>.Data</span>
+      </a>
+      
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <!-- Moon Icon (for Light Mode) -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (for Dark Mode) -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        
+        <!-- CV Button -->
+        <a href="assets/documents/Jagannath_Barik_CV.pdf" class="btn btn-primary btn-sm" download id="navbar-cv-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          CV
+        </a>
+        
+        <!-- Mobile Menu Toggle -->
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-subtitle">Welcome to my Portfolio</span>
+        <h1 class="hero-title">Hi, I'm Jagannath Barik</h1>
+        <p class="hero-tagline">Data Analyst | MSc Data Analytics Student | Python, SQL & Power BI</p>
+        <p class="hero-intro">
+          I turn raw data into clear insights, interactive dashboards, and business-focused predictive solutions. Specializing in bridging technical analysis with executive decision-making.
+        </p>
+        
+        <div class="hero-meta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          Based in Dublin, Ireland (Open to roles across Ireland & Europe)
+        </div>
+        
+        <div class="btn-group">
+          <a href="#projects" class="btn btn-primary" id="hero-projects-btn">View Projects</a>
+          <a href="assets/documents/Jagannath_Barik_CV.pdf" class="btn btn-secondary" download id="hero-cv-btn">Download CV</a>
+          <a href="#contact" class="btn btn-outline" id="hero-contact-btn">Contact Me</a>
+        </div>
+      </div>
+      
+      <div class="hero-image-container">
+        <div class="hero-image-wrapper">
+          <img src="assets/images/profile-photo.jpg" alt="Jagannath Barik Profile Photo">
+        </div>
+        <div class="hero-image-bg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>A look into my professional background, goals, and experience.</p>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a Data Analytics master’s student at Technological University Dublin with over 3 years of professional experience as an Analyst. My background includes data quality checks, survey programming, reporting, client communication, and working with structured data.
+          </p>
+          <p>
+            I enjoy cleaning messy datasets, exploring complex patterns, building interactive dashboard reporting, developing machine learning models, and presenting findings in a clear, narrative-driven, and business-friendly way.
+          </p>
+          <p>
+            I am currently looking for Data Analyst, BI Analyst, Junior Data Scientist, and Business Analyst opportunities in Ireland and Europe.
+          </p>
+        </div>
+        
+        <div class="about-highlights">
+          <!-- Highlight Card 1 -->
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="highlight-info">
+              <h4>3+ Years Analyst Experience</h4>
+              <p>Corporate experience managing data workflows, validation, and analytics</p>
+            </div>
+          </div>
+          
+          <!-- Highlight Card 2 -->
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+              </svg>
+            </div>
+            <div class="highlight-info">
+              <h4>MSc Data Analytics at TU Dublin</h4>
+              <p>Specializing in Data Mining, ML, BI, and Organizational Decision Making</p>
+            </div>
+          </div>
+          
+          <!-- Highlight Card 3 -->
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <div class="highlight-info">
+              <h4>Open to Ireland & Europe</h4>
+              <p>Actively interviewing for Graduate and Entry-level analytical roles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2>Technical & Business Skills</h2>
+        <p>My toolkit for working with data, modeling, building dashboards, and communicating insights.</p>
+      </div>
+      
+      <div class="skills-grid">
+        <!-- Programming & Data Analysis -->
+        <div class="skills-card">
+          <div class="skills-card-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <h3>Programming & Analysis</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">Jupyter Notebook</span>
+          </div>
+        </div>
+        
+        <!-- Data Visualization & BI -->
+        <div class="skills-card">
+          <div class="skills-card-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+            <h3>Data Visualization & BI</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">Excel Dashboards</span>
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">Seaborn</span>
+            <span class="skill-tag">DAX</span>
+          </div>
+        </div>
+        
+        <!-- Machine Learning -->
+        <div class="skills-card">
+          <div class="skills-card-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+            <h3>Machine Learning</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">Logistic Regression</span>
+            <span class="skill-tag">Decision Trees</span>
+            <span class="skill-tag">Random Forests</span>
+            <span class="skill-tag">XGBoost</span>
+            <span class="skill-tag">Model Evaluation</span>
+            <span class="skill-tag">Feature Engineering</span>
+          </div>
+        </div>
+        
+        <!-- Data Handling -->
+        <div class="skills-card">
+          <div class="skills-card-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <h3>Data Handling</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-tag">Data Cleaning</span>
+            <span class="skill-tag">Exploratory Data Analysis</span>
+            <span class="skill-tag">Data Validation</span>
+            <span class="skill-tag">Data Transformation</span>
+            <span class="skill-tag">Feature Encoding</span>
+            <span class="skill-tag">Missing Value Handling</span>
+          </div>
+        </div>
+        
+        <!-- Tools -->
+        <div class="skills-card">
+          <div class="skills-card-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+            <h3>Tools & Survey Platforms</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Streamlit</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">OpenAI API</span>
+            <span class="skill-tag">FPDF</span>
+            <span class="skill-tag">Decipher</span>
+            <span class="skill-tag">Confirmit</span>
+            <span class="skill-tag">Qualtrics</span>
+            <span class="skill-tag">Recollective</span>
+          </div>
+        </div>
+        
+        <!-- Business & Communication -->
+        <div class="skills-card">
+          <div class="skills-card-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            <h3>Business & Communication</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-tag">Client Communication</span>
+            <span class="skill-tag">Reporting</span>
+            <span class="skill-tag">Technical Documentation</span>
+            <span class="skill-tag">Stakeholder Engagement</span>
+            <span class="skill-tag">Insight Presentation</span>
+            <span class="skill-tag">Analytical Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p>Real-world datasets and data products demonstrating analysis, machine learning, and BI dashboards.</p>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/images/project-analytics-pipeline.png" alt="Automated Data Analytics Pipeline using AI Agents">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Automated Data Analytics Pipeline using AI Agents</h3>
+            <p class="project-desc">
+              A Streamlit-based analytics platform that automates data ingestion, exploratory analysis, machine learning model comparison, NLP-based insights, and PDF report generation.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Streamlit</span>
+              <span class="project-tag">Pandas</span>
+              <span class="project-tag">Scikit-learn</span>
+              <span class="project-tag">OpenAI API</span>
+              <span class="project-tag">FPDF</span>
+            </div>
+            <div class="project-highlights">
+              <h5>Key Highlights</h5>
+              <ul>
+                <li>Built a modular data analytics pipeline with multiple automated phases.</li>
+                <li>Added automated dataset upload and data overview.</li>
+                <li>Implemented EDA and machine learning model comparison.</li>
+                <li>Integrated NLP-based query insights for conversational reporting.</li>
+                <li>Planned PDF report generation for client-ready analytical output.</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/JB14forever/data_analytics_platform" target="_blank" class="btn btn-primary btn-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/images/project-churn-prediction.png" alt="Customer Churn Prediction using Machine Learning">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Customer Churn Prediction using Machine Learning</h3>
+            <p class="project-desc">
+              A machine learning project focused on predicting telecom customer churn using customer profile, service usage, and billing data.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Pandas</span>
+              <span class="project-tag">Scikit-learn</span>
+              <span class="project-tag">XGBoost</span>
+              <span class="project-tag">Matplotlib</span>
+              <span class="project-tag">Seaborn</span>
+            </div>
+            <div class="project-highlights">
+              <h5>Key Highlights</h5>
+              <ul>
+                <li>Cleaned and prepared customer churn datasets, addressing missing values.</li>
+                <li>Performed exploratory data analysis to identify key churn patterns.</li>
+                <li>Applied feature encoding and data preprocessing pipelines.</li>
+                <li>Compared multiple machine learning models (XGBoost, Random Forest).</li>
+                <li>Evaluated performance using accuracy, precision, recall, and F1-score.</li>
+                <li>Interpreted churn drivers from a business perspective to provide insights.</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/JB14forever/telecom-churn-prediction" target="_blank" class="btn btn-primary btn-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/images/project-powerbi-dashboard.png" alt="Sales Performance Dashboard">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Power BI Sales Performance Dashboard</h3>
+            <p class="project-desc">
+              An interactive Power BI dashboard designed to analyse sales trends, revenue performance, product categories, and regional business performance.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Power BI</span>
+              <span class="project-tag">Excel</span>
+              <span class="project-tag">Power Query</span>
+              <span class="project-tag">DAX</span>
+            </div>
+            <div class="project-highlights">
+              <h5>Key Highlights</h5>
+              <ul>
+                <li>Built interactive multi-page dashboards for comprehensive sales analysis.</li>
+                <li>Created custom KPIs for revenue, profit, quantity sold, and trend margins.</li>
+                <li>Added advanced filters for regions, product categories, and timelines.</li>
+                <li>Used DAX measures to build dynamic charts and comparisons.</li>
+                <li>Designed the visual layout for executive decision-making and reporting.</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <span class="btn btn-outline btn-sm" style="cursor: default; opacity: 0.7;">
+                Dashboard PDF Uploaded
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/images/project-policy-analysis.png" alt="Impact of Mobility Restrictions on Air Quality">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Impact of Mobility Restrictions on Air Quality</h3>
+            <p class="project-desc">
+              A data analytics project exploring how mobility restriction patterns may relate to changes in PM2.5 air-quality levels.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Pandas</span>
+              <span class="project-tag">Matplotlib</span>
+              <span class="project-tag">Seaborn</span>
+              <span class="project-tag">Statistical Analysis</span>
+            </div>
+            <div class="project-highlights">
+              <h5>Key Highlights</h5>
+              <ul>
+                <li>Collected and prepared mobility index and air-quality monitoring data.</li>
+                <li>Analysed pollution trends before, during, and after restriction periods.</li>
+                <li>Created visualisations to compare changes in PM2.5 levels.</li>
+                <li>Interpreted findings from a public policy analytics perspective.</li>
+                <li>Presented insights in a clear, academic and structured report format.</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/JB14forever/air-quality-analytics" target="_blank" class="btn btn-primary btn-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2>Work Experience</h2>
+        <p>My career timeline and key professional achievements.</p>
+      </div>
+      
+      <div class="timeline">
+        <!-- Experience Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">June 2022 – Sept 2025</span>
+            <h3 class="timeline-title">Analyst</h3>
+            <div class="timeline-company">Dentsu Global Services</div>
+            <ul class="timeline-bullets">
+              <li>Worked on survey programming, data quality checks, reporting, and project delivery for client research projects.</li>
+              <li>Used tools such as Confirmit, Decipher, Qualtrics, and Recollective to support data collection and analysis workflows.</li>
+              <li>Managed end-to-end project tasks including setup, validation, testing, documentation, and client communication.</li>
+              <li>Supported high-value client projects while maintaining accuracy, timelines, and quality standards.</li>
+              <li>Received multiple team player awards for collaboration and project contribution.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Experience Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">Dec 2025 – Present</span>
+            <h3 class="timeline-title">Sales Assistant</h3>
+            <div class="timeline-company">Gift Emporium</div>
+            <ul class="timeline-bullets">
+              <li>Assisted customers with product queries, billing, packaging, and daily store operations.</li>
+              <li>Managed stock replenishment and helped maintain organised product displays.</li>
+              <li>Supported team members during busy store hours while maintaining good customer service.</li>
+              <li>Developed strong communication, multitasking, and customer-facing skills in an Irish workplace.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2>Education</h2>
+        <p>Academic history and foundation in Data Analytics and Computer Engineering.</p>
+      </div>
+      
+      <div class="education-grid">
+        <!-- Education 1 -->
+        <div class="education-card">
+          <span class="education-date">2025 – 2026</span>
+          <h3 class="education-degree">MSc Data Analytics</h3>
+          <div class="education-school">Technological University Dublin</div>
+          <div class="education-highlights">
+            <h4>Relevant Areas of Study</h4>
+            <ul>
+              <li>Data Mining</li>
+              <li>Machine Learning</li>
+              <li>Business Intelligence</li>
+              <li>Data Analytics</li>
+              <li>Research Project</li>
+              <li>Organisational Decision Making</li>
+              <li>Fundamentals of Analytics</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Education 2 -->
+        <div class="education-card">
+          <span class="education-date">2018 – 2022</span>
+          <h3 class="education-degree">BE in Computer Engineering</h3>
+          <div class="education-school">University of Mumbai</div>
+          <div class="education-highlights">
+            <h4>Academic Highlights</h4>
+            <ul>
+              <li>Graduated with CGPA: 9.56/10 (Class Topper)</li>
+              <li>Final Year Capstone: SignGenix – Speech-to-Sign Language Converter</li>
+              <li>Strong foundation in algorithms, databases, data structures, and software engineering principles.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Download Section -->
+  <section id="resume">
+    <div class="container">
+      <div class="resume-box">
+        <h3>Need a Copy of my CV?</h3>
+        <p>Want a detailed overview of my experience, education, skills, and projects in standard format? Download it using the button below.</p>
+        <a href="assets/documents/Jagannath_Barik_CV.pdf" class="btn btn-primary" download id="resume-download-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download CV / Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-bg">
+    <div class="container contact-grid">
+      <div class="contact-text">
+        <h2>Get in Touch</h2>
+        <p>I am currently open to Data Analyst, BI Analyst, Junior Data Scientist, and Business Analyst opportunities in Ireland and Europe. Feel free to contact me for job opportunities, graduate roles, internships, or data-related collaborations.</p>
+        
+        <div class="contact-info-list">
+          <!-- Contact Email -->
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="contact-info-details">
+              <span>Email Me</span>
+              <a href="mailto:jagannathbarik1408@gmail.com">jagannathbarik1408@gmail.com</a>
+            </div>
+          </div>
+          
+          <!-- Contact Location -->
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="contact-info-details">
+              <span>Location</span>
+              <p>Dublin, Ireland</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-visual">
+        <div class="contact-card">
+          <div class="contact-card-avatar">
+            <img src="assets/images/profile-photo.jpg" alt="Jagannath Barik Professional Portrait">
+          </div>
+          <h4>Jagannath Barik</h4>
+          <p>MSc Data Analytics Student & Analyst</p>
+          <div class="contact-socials">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/jagannath-barik/" target="_blank" class="social-btn" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/JB14forever" target="_blank" class="social-btn" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        JB<span>.Data</span>
+      </div>
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Jagannath Barik. Built with HTML, CSS, and JavaScript.</p>
+        <div class="footer-bottom-links">
+          <a href="https://github.com/JB14forever" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/jagannath-barik/" target="_blank">LinkedIn</a>
+          <a href="mailto:jagannathbarik1408@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
