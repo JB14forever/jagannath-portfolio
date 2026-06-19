@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Scroll Reveal Animations ---
   // Add an entry animation to elements as they enter the screen
   const revealElements = document.querySelectorAll(
-    '.skills-card, .timeline-item, .education-card, .highlight-card, .contact-card'
+    '.project-card, .skills-card, .timeline-item, .education-card, .highlight-card, .contact-card'
   );
   
   // Set up initial style for animation
