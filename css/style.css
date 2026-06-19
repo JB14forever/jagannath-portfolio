@@ -2006,3 +2006,151 @@ section {
     height: 360px;
   }
 }
+
+/* ==========================================
+   Final Compact Refinements
+   ========================================== */
+section {
+  padding: 3rem 0;
+}
+
+#home {
+  min-height: 86vh;
+  padding: 6.25rem 0 2.75rem;
+}
+
+.section-header {
+  margin-bottom: 1.55rem;
+}
+
+.section-header h2 {
+  font-size: 1.85rem;
+  margin-bottom: 0.55rem;
+}
+
+.section-header h2::after {
+  bottom: -6px;
+  height: 3px;
+}
+
+.section-header p {
+  font-size: 0.95rem;
+  margin-top: 0.35rem;
+}
+
+.hero-image-container {
+  transform: translateY(-22px);
+}
+
+.about-grid,
+.contact-grid {
+  gap: 2rem;
+}
+
+.projects-grid {
+  gap: 1rem;
+}
+
+.skills-grid {
+  align-items: start;
+  grid-auto-rows: auto;
+  gap: 0.9rem;
+}
+
+.skills-card {
+  height: auto;
+  min-height: 0;
+  padding: 0.95rem;
+}
+
+.skills-card-header {
+  margin-bottom: 0.65rem;
+  padding-bottom: 0.55rem;
+}
+
+.skills-card-header svg {
+  width: 20px;
+  height: 20px;
+}
+
+.skills-card-header h3 {
+  font-size: 0.94rem;
+}
+
+.skills-list {
+  gap: 0.45rem;
+}
+
+.skill-tag {
+  padding: 0.3rem 0.58rem;
+  font-size: 0.74rem;
+}
+
+.timeline {
+  gap: 0.9rem;
+}
+
+.timeline-content {
+  min-height: 148px;
+  padding: 1rem;
+  cursor: default;
+}
+
+.timeline-content::after {
+  content: 'Hover to view details';
+  display: inline-block;
+  margin-top: 0.65rem;
+  color: var(--accent-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.timeline-content:hover::after,
+.timeline-content:focus::after,
+.timeline-content:focus-within::after {
+  display: none;
+}
+
+.timeline-bullets {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-4px);
+  transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.25s ease, margin-top 0.25s ease;
+}
+
+.timeline-content:hover .timeline-bullets,
+.timeline-content:focus .timeline-bullets,
+.timeline-content:focus-within .timeline-bullets {
+  max-height: 320px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-bullets li {
+  font-size: 0.79rem;
+  line-height: 1.36;
+  margin-bottom: 0.3rem;
+}
+
+.education-grid {
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 2.5rem 0;
+  }
+
+  #home {
+    padding: 6rem 0 2.5rem;
+  }
+
+  .hero-image-container {
+    transform: none;
+  }
+
+  .timeline-content {
+    min-height: 132px;
+  }
+}
