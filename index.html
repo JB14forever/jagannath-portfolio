@@ -394,6 +394,7 @@
       <div class="section-header">
         <h2>Featured Projects</h2>
         <p>Real-world datasets and data products demonstrating analysis, machine learning, and BI dashboards.</p>
+        <p class="project-hover-note">Hover over any project card to flip it and view the key highlights.</p>
       </div>
 
       <div class="project-filters" aria-label="Project categories">
@@ -406,151 +407,174 @@
       <div class="projects-grid">
         <!-- Project 1 -->
         <div class="project-card" data-category="analytics ml">
-          <div class="project-image">
-            <img src="assets/images/project-analytics-pipeline.png" alt="Automated Data Analytics Pipeline using AI Agents">
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Automated Data Analytics Pipeline using AI Agents</h3>
-            <p class="project-desc">
-              A Streamlit-based analytics platform that automates data ingestion, exploratory analysis, machine learning model comparison, NLP-based insights, and PDF report generation.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">Streamlit</span>
-              <span class="project-tag">Pandas</span>
-              <span class="project-tag">Scikit-learn</span>
-              <span class="project-tag">OpenAI API</span>
-              <span class="project-tag">FPDF</span>
+          <div class="project-card-inner">
+            <div class="project-card-face project-card-front">
+              <div class="project-image">
+                <img src="assets/images/project-analytics-pipeline.png" alt="Automated Data Analytics Pipeline using AI Agents">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Automated Data Analytics Pipeline using AI Agents</h3>
+                <p class="project-desc">
+                  A Streamlit-based analytics platform that automates data ingestion, EDA, ML model comparison, NLP insights, and report generation.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Streamlit</span>
+                  <span class="project-tag">Pandas</span>
+                  <span class="project-tag">Scikit-learn</span>
+                  <span class="project-tag">OpenAI API</span>
+                  <span class="project-tag">FPDF</span>
+                </div>
+              </div>
             </div>
-            <div class="project-highlights">
-              <h5>Key Highlights</h5>
-              <ul>
-                <li>Built a modular data analytics pipeline with multiple automated phases.</li>
-                <li>Added automated dataset upload and data overview.</li>
-                <li>Implemented EDA and machine learning model comparison.</li>
-                <li>Integrated NLP-based query insights for conversational reporting.</li>
-                <li>Planned PDF report generation for client-ready analytical output.</li>
-              </ul>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/JB14forever/data_analytics_platform" target="_blank" class="btn btn-primary btn-sm">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-                GitHub
-              </a>
+            <div class="project-card-face project-card-back">
+              <div class="project-highlights">
+                <h5>Key Highlights</h5>
+                <ul>
+                  <li>Built a modular analytics pipeline with automated phases.</li>
+                  <li>Added dataset upload, data overview, and EDA workflows.</li>
+                  <li>Implemented machine learning model comparison.</li>
+                  <li>Integrated NLP-based query insights for reporting.</li>
+                  <li>Planned PDF generation for client-ready output.</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/JB14forever/data_analytics_platform" target="_blank" class="btn btn-primary btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
             </div>
           </div>
         </div>
         
         <!-- Project 2 -->
         <div class="project-card" data-category="ml">
-          <div class="project-image">
-            <img src="assets/images/project-churn-prediction.png" alt="Customer Churn Prediction using Machine Learning">
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Customer Churn Prediction using Machine Learning</h3>
-            <p class="project-desc">
-              A machine learning project focused on predicting telecom customer churn using customer profile, service usage, and billing data.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">Pandas</span>
-              <span class="project-tag">Scikit-learn</span>
-              <span class="project-tag">XGBoost</span>
-              <span class="project-tag">Matplotlib</span>
-              <span class="project-tag">Seaborn</span>
+          <div class="project-card-inner">
+            <div class="project-card-face project-card-front">
+              <div class="project-image">
+                <img src="assets/images/project-churn-prediction.png" alt="Customer Churn Prediction using Machine Learning">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Customer Churn Prediction using Machine Learning</h3>
+                <p class="project-desc">
+                  A machine learning project focused on predicting telecom customer churn using customer profile, usage, and billing data.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Pandas</span>
+                  <span class="project-tag">Scikit-learn</span>
+                  <span class="project-tag">XGBoost</span>
+                  <span class="project-tag">Matplotlib</span>
+                  <span class="project-tag">Seaborn</span>
+                </div>
+              </div>
             </div>
-            <div class="project-highlights">
-              <h5>Key Highlights</h5>
-              <ul>
-                <li>Cleaned and prepared customer churn datasets, addressing missing values.</li>
-                <li>Performed exploratory data analysis to identify key churn patterns.</li>
-                <li>Applied feature encoding and data preprocessing pipelines.</li>
-                <li>Compared multiple machine learning models (XGBoost, Random Forest).</li>
-                <li>Evaluated performance using accuracy, precision, recall, and F1-score.</li>
-                <li>Interpreted churn drivers from a business perspective to provide insights.</li>
-              </ul>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/JB14forever/telecom-churn-prediction" target="_blank" class="btn btn-primary btn-sm">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-                GitHub
-              </a>
+            <div class="project-card-face project-card-back">
+              <div class="project-highlights">
+                <h5>Key Highlights</h5>
+                <ul>
+                  <li>Cleaned customer churn datasets and handled missing values.</li>
+                  <li>Performed EDA to identify key churn patterns.</li>
+                  <li>Applied encoding and preprocessing pipelines.</li>
+                  <li>Compared XGBoost and Random Forest models.</li>
+                  <li>Evaluated accuracy, precision, recall, and F1-score.</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/JB14forever/telecom-churn-prediction" target="_blank" class="btn btn-primary btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
             </div>
           </div>
         </div>
         
         <!-- Project 3 -->
         <div class="project-card" data-category="bi">
-          <div class="project-image">
-            <img src="assets/images/project-powerbi-dashboard.png" alt="Sales Performance Dashboard">
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Power BI Sales Performance Dashboard</h3>
-            <p class="project-desc">
-              An interactive Power BI dashboard designed to analyse sales trends, revenue performance, product categories, and regional business performance.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Power BI</span>
-              <span class="project-tag">Excel</span>
-              <span class="project-tag">Power Query</span>
-              <span class="project-tag">DAX</span>
+          <div class="project-card-inner">
+            <div class="project-card-face project-card-front">
+              <div class="project-image">
+                <img src="assets/images/project-powerbi-dashboard.png" alt="Sales Performance Dashboard">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Power BI Sales Performance Dashboard</h3>
+                <p class="project-desc">
+                  An interactive Power BI dashboard designed to analyse sales trends, revenue performance, categories, and regional results.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Power BI</span>
+                  <span class="project-tag">Excel</span>
+                  <span class="project-tag">Power Query</span>
+                  <span class="project-tag">DAX</span>
+                </div>
+              </div>
             </div>
-            <div class="project-highlights">
-              <h5>Key Highlights</h5>
-              <ul>
-                <li>Built interactive multi-page dashboards for comprehensive sales analysis.</li>
-                <li>Created custom KPIs for revenue, profit, quantity sold, and trend margins.</li>
-                <li>Added advanced filters for regions, product categories, and timelines.</li>
-                <li>Used DAX measures to build dynamic charts and comparisons.</li>
-                <li>Designed the visual layout for executive decision-making and reporting.</li>
-              </ul>
-            </div>
-            <div class="project-links">
-              <span class="btn btn-outline btn-sm" style="cursor: default; opacity: 0.7;">
-                Dashboard PDF Uploaded
-              </span>
+            <div class="project-card-face project-card-back">
+              <div class="project-highlights">
+                <h5>Key Highlights</h5>
+                <ul>
+                  <li>Built interactive multi-page dashboards for sales analysis.</li>
+                  <li>Created KPIs for revenue, profit, quantity, and margins.</li>
+                  <li>Added filters for regions, product categories, and timelines.</li>
+                  <li>Used DAX measures for dynamic charts and comparisons.</li>
+                  <li>Designed the layout for executive reporting.</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <span class="btn btn-outline btn-sm" style="cursor: default; opacity: 0.7;">
+                  Dashboard PDF Uploaded
+                </span>
+              </div>
             </div>
           </div>
         </div>
         
         <!-- Project 4 -->
         <div class="project-card" data-category="analytics">
-          <div class="project-image">
-            <img src="assets/images/project-policy-analysis.png" alt="Impact of Mobility Restrictions on Air Quality">
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Impact of Mobility Restrictions on Air Quality</h3>
-            <p class="project-desc">
-              A data analytics project exploring how mobility restriction patterns may relate to changes in PM2.5 air-quality levels.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">Pandas</span>
-              <span class="project-tag">Matplotlib</span>
-              <span class="project-tag">Seaborn</span>
-              <span class="project-tag">Statistical Analysis</span>
+          <div class="project-card-inner">
+            <div class="project-card-face project-card-front">
+              <div class="project-image">
+                <img src="assets/images/project-policy-analysis.png" alt="Impact of Mobility Restrictions on Air Quality">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Impact of Mobility Restrictions on Air Quality</h3>
+                <p class="project-desc">
+                  A data analytics project exploring how mobility restriction patterns may relate to PM2.5 air-quality changes.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Pandas</span>
+                  <span class="project-tag">Matplotlib</span>
+                  <span class="project-tag">Seaborn</span>
+                  <span class="project-tag">Statistical Analysis</span>
+                </div>
+              </div>
             </div>
-            <div class="project-highlights">
-              <h5>Key Highlights</h5>
-              <ul>
-                <li>Collected and prepared mobility index and air-quality monitoring data.</li>
-                <li>Analysed pollution trends before, during, and after restriction periods.</li>
-                <li>Created visualisations to compare changes in PM2.5 levels.</li>
-                <li>Interpreted findings from a public policy analytics perspective.</li>
-                <li>Presented insights in a clear, academic and structured report format.</li>
-              </ul>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/JB14forever/air-quality-analytics" target="_blank" class="btn btn-primary btn-sm">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-                GitHub
-              </a>
+            <div class="project-card-face project-card-back">
+              <div class="project-highlights">
+                <h5>Key Highlights</h5>
+                <ul>
+                  <li>Prepared mobility index and air-quality monitoring data.</li>
+                  <li>Analysed pollution trends around restriction periods.</li>
+                  <li>Created visualisations comparing PM2.5 changes.</li>
+                  <li>Interpreted findings from a public policy perspective.</li>
+                  <li>Presented insights in a structured analytical report.</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/JB14forever/air-quality-analytics" target="_blank" class="btn btn-primary btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  GitHub
+                </a>
+              </div>
             </div>
           </div>
         </div>
